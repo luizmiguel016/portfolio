@@ -6,10 +6,11 @@
 }
 
 :root {
-    --cor-fundo: #0f0f0f;
+    --cor-fundo: #151515;
+    --cor-fundo-escuro: #050505;
     --cor-texto: #ffffff;
     --cor-destaque: #FF7800;
-    --padding-lateral: 12%;
+    --padding-lateral: 8%;
 }
 
 body.light-mode {
@@ -86,14 +87,14 @@ header nav a:hover {
     color: var(--cor-destaque);
 }
 
-
 #sobreMim {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
     padding: 0 var(--padding-lateral);
-    margin-top: 120px;
+    
+    min-height: 91.2vh;
+
 }
 
 .apresentacao {
@@ -159,54 +160,70 @@ header nav a:hover {
     color: var(--cor-destaque);
 }
 
-.container-skills {
-    display: grid;
+section:not(#sobreMim) {
+    background-color: var(--cor-fundo-escuro);
+
+    padding: 120px var(--padding-lateral);
+}
+
+#habilidades h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--cor-texto);
+    margin-bottom: 120px;
+}
+
+.container-habilidades {
+    justify-content: center;
     gap: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 @media (max-width: 1024px) {
     :root {
-        --espacamento: 60px;
-    }
-
-    header nav ul {
-        gap: 20px;
+        --padding-lateral: 5%;
     }
 
     #sobreMim {
         flex-direction: column;
-        margin: var(--espacamento) auto;
-        gap: var(--espacamento);
-        padding: 0 3%;
+        justify-content: center;
+        text-align: center;
+        min-height: auto;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        gap: 50px;
+    }
+
+    .apresentacao {
+        max-width: 100%;
+    }
+
+    .botoes-apresentacao {
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     .foto-perfil {
-        width: 250px;
-        height: 250px;
-        margin: 0 auto;
+        width: 300px;
+        height: 300px;
     }
 }
 
 @media (max-width: 600px) {
     header {
         flex-direction: column;
-        align-items: flex-start;
+        grid: 15px;
+        padding: 20px 5%;
     }
 
     header nav ul {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 15px;
-        width: 100%;
-    }
-
-    header h1 {
-        margin-bottom: 10px;
-        font-size: 1.25rem;
     }
 
     #sobreMim h2 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 
     #sobreMim p {
@@ -214,7 +231,7 @@ header nav a:hover {
     }
 
     .foto-perfil {
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
     }
 }
