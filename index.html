@@ -1,123 +1,225 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="pt-BR">
     <head>
-        <title>Luiz Miguel</title>
-        <meta name="description" content="Este portifólio diz respeito ao Luiz Miguel, Engenheiro de Software pelo Instituto Federal do Paraná">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfólio | Luiz Miguel</title>
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     </head>
     <body>
         <header>
             <h1>Luiz Miguel</h1>
+            <nav id="navegacao">
+                <ul>
+                    <li><a href="#sobreMim">Sobre mim</a></li>
+                    <li><a href="#tecnologias">Tecnologias</a></li>
+                    <li><a href="#experiencias">Experiências</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#formacaoAcademica">Formação Acadêmica</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li>
+                        <button id="tema-toggle" aria-multiselectable="Alternar Tema">
+                            <i class="fa-solid fa-sun" id="icone-tema"></i>
+                        </button>
+
+                    </li>
+                </ul>
+            </nav>
         </header>
         <main>
             <!--Introdução-->
-            <section>
-                <h2>Olá, eu sou Luiz Miguel <br> Desenvolvedor Back-end</h2>
-                <p>Desenvolvedor Back-end com especialização em <strong>Java</strong>, atualmente expandindo meus horizontes para <strong>Spring Boot e Python</strong>. Meu interesse por Python me inspira a encarar novos desafios no desenvolvimento na área de <strong>Visão Computacional</strong>.</p>
-                <img src="\assets\img\foto-pessoal.jpg" width="300" height="auto" alt="foto-pessoal">
+            <section id="sobreMim">
+                <div class="apresentacao">
+                    <h2>Olá, eu sou <span class="destaque">Luiz</span><br> <span class="destaque">Miguel</span><br> Desenvolvedor FullStack</h2>
+                    <p>Sou estudante de Engenharia de Software com foco em desenvolvimento e tecnologia orientada a dados. Atuo com <span class="destaque">Java</span> e <span class="destaque">Python</span>, aplicando boas práticas de programação e fundamentos sólidos de software. Tenho interesse crescente na área de <span class="destaque">Visão Computacional</span> e análise de dados, utilizando <span class="destaque">Python</span> e <span class="destaque">Power BI</span> transformar dados em insights e soluções inteligentes. Estou em constante evolução, buscando aprofundar meus conhecimentos e construir sistemas cada vez mais robustos e eficientes.</p>
+
+                    <div class="botoes-apresentacao">
+                        <a href="https://www.linkedin.com/in/scientist-luizmiguel/" class="btn-icone" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/luizmiguel016" class="btn-icone" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="btn-destaque" target="_blank"><i class="fa-solid fa-download"></i> Baixar Currículo</a>
+                    </div>
+                </div>                
+                <img src="assets/img/foto-pessoal.jpg" alt="foto-pessoal" class="foto-perfil">
             </section>
             <!--Tecnologias-->
-            <section>
-                <div class="frontEnd">
-                    <h3>Front-end</h3>
-                    <img src="assets\img\icon-html.png" width="100" height="auto" alt="icon-html" id="iHtml">
-                    <label for="iHtml">HTML</label>
+            <section id="tecnologias">
+                <h2>Minhas Tecnologias</h2> <div class="container-skills">
+                    <div class="frontEnd">
+                        <h3>Front-end</h3>
+                        <i class="fa-brands fa-html5 tech-icon" id="iHtml"></i>
+                        <label for="iHtml">HTML</label>
 
-                    <img src="assets\img\icon-css.png" width="100" height="auto" alt="icon-css" id="iCss">
-                    <label for="iCss">CSS</label>
+                        <i class="fa-brands fa-css3-alt tech-icon" id="iCss"></i>
+                        <label for="iCss">CSS</label>
 
-                    <img src="assets\img\icon-javascript.png" width="100" height="auto" alt="foto-pessoal" id="iJavaScript">
-                    <label for="iJavascript">JavaScript</label>
-                </div>
-                <div class="backEnd">
-                    <h3>Back-end</h3>
-                    <img src="assets\img\icon-python.png" width="100" height="auto" alt="icon-python" id="iPython">
-                    <label for="iPython">Python</label>
+                        <i class="fa-brands fa-js tech-icon" id="iJavaScript"></i>
+                        <label for="iJavaScript">JavaScript</label>
+                    </div>
+                    
+                    <div class="backEnd">
+                        <h3>Back-end</h3>
+                        <i class="fa-brands fa-python tech-icon" id="iPython"></i>
+                        <label for="iPython">Python</label>
 
-                    <img src="assets\img\icon-spring.png" width="100" height="auto" alt="icon-springboot" id="iSpring">
-                    <label for="iSpring">Spring</label>
+                        <i class="fa-solid fa-leaf tech-icon" id="iSpring"></i>
+                        <label for="iSpring">Spring</label>
 
-                    <img src="assets\img\icon-java.png" width="100" height="auto" alt="icon-java" id="iJava">
-                    <label for="iJava">Java</label>
-                </div>
-                <div class="bancoDeDados">
-                    <h3>Banco de Dados</h3>
-                    <img src="assets\img\icon-mysql.png" width="100" height="auto" alt="icon-mysql" id="mySql">
-                    <label for="mySql">MySql</label>
+                        <i class="fa-brands fa-java tech-icon" id="iJava"></i>
+                        <label for="iJava">Java</label>
+                    </div>
+                    
+                    <div class="bancoDeDados">
+                        <h3>Banco de Dados</h3>
+                        <i class="fa-solid fa-database tech-icon" id="mySql"></i>
+                        <label for="mySql">MySql</label>
 
-                    <img src="assets\img\icon-postgreesql.png" width="100" height="auto" alt="icon-postgreesql" id="iPostgrees">
-                    <label for="iPostgrees"></label>
-                </div>
-                <div class="Ferramentas">
-                    <h3>Ferramentas</h3>
-                    <img src="assets\img\icon-jetbrains.png" width="100" height="auto" alt="icon-jetbrains" id="iJetBrains">
-                    <label for="iJetBrains">JetBrains</label>
+                        <i class="fa-solid fa-database tech-icon" id="iPostgrees"></i>
+                        <label for="iPostgrees">PostgreSQL</label>
+                    </div>
+                    
+                    <div class="Ferramentas">
+                        <h3>Ferramentas</h3>
+                        <i class="fa-solid fa-laptop-code tech-icon" id="iJetBrains"></i>
+                        <label for="iJetBrains">JetBrains</label>
 
-                    <img src="assets\img\icon-github.png" width="100" height="auto" alt="icon-github" id="iGithub">
-                    <label for="iGithub">GitHub</label>
+                        <i class="fa-brands fa-github tech-icon" id="iGithub"></i>
+                        <label for="iGithub">GitHub</label>
 
-                    <img src="assets\img\icon-powerbi.png" width="100" height="auto" alt="icon-powerbi" id="iPowerBi">
-                    <label for="iPowerBi">Power BI</label>
+                        <i class="fa-solid fa-chart-simple tech-icon" id="iPowerBi"></i>
+                        <label for="iPowerBi">Power BI</label>
 
-                    <img src="assets\img\icon-excel.png" width="100" height="auto" alt="icon-excel" id="iExcel">
-                    <label for="iExcel">Excel</label>
+                        <i class="fa-solid fa-file-excel tech-icon" id="iExcel"></i>
+                        <label for="iExcel">Excel</label>
+                    </div>
                 </div>
             </section>
             <!--Experiências-->
-            <section>
-                <div>
+            <section id="experiencias">
+                <article>
                     <h3>Assistente Administrativo</h3>
-
                     <p>Faculdade UniFatecie</p>
                     <p>10/2025 - Atual</p>
-                    <p>• Atuo como Analista de Suporte TI, utilizando Sistema WAE e Excel.</p>
-                    <p>• Correção de BUG de sistemas no âmbito escolar.</p>
-                    <p>• Criação de Planos de Pagamentos de cursos EaD.</p>
-                </div>
-                <div>
+                    <ul>
+                        <li>Atuo como Analista de Suporte TI, utilizando Sistema WAE e Excel.</li>
+                        <li>Correção de BUG de sistemas no âmbito escolar.</li>
+                        <li>Criação de Planos de Pagamentos de cursos EaD.</li>
+                    </ul>
+                </article>
+                <article>
                     <h3>Jovem Aprendiz em Planejamento e Controle da Manutenção</h3>
+
                     <p>Louis Dreyfus Company</p>
                     <p>05/2024 - 09/2025</p>
-                    <p>• Planejamento e Controle da manutenção atráves do Sistema SAP.</p>
-                    <p>• Monitoramento de conclusão de Ordem de Serviço.</p>
-                    <p>• Criação de Power BI para Gestão de Motores Elétricos.</p>
-                </div>
+                    <ul>
+                        <li>Planejamento e Controle da manutenção atráves do Sistema SAP.</li>
+                        <li>Monitoramento de conclusão de Ordem de Serviço.</li>
+                        <li>Criação de Power BI para Gestão de Motores Elétricos.</li>
+                    </ul>
+                </article>
             </section>
             <!--Projetos-->
-            <section>
+            <section id="projetos">
                 <h2>Meus Projetos</h2>
-                <div>
+                <article>
                     <h3>Análise de Saúde Pessoal</h3>
                     <button>Java</button>
                     <button>MySql</button>
-                </div>
-                <div>
+                </article>
+                <article>
                     <h3>Análise de Dados Airbnb - Lisboa</h3>
                     <button>Python</button>
                     <button>Pandas</button>
                     <button>Matplotlib</button>
                     <button>Seaborn</button>
-                </div>
-                    <h2>Mais Projetos em Breve</h2>
+                </article>
+                    <h3>Mais Projetos em Breve</h3>
                     <p>Novos projetos estão sendo desenvolvidos e serão adicionados em breve.</p>
-                <div>
+                <article>
                     <h2>Certificados e Conquistas</h2>
                     <div>
-                        <img src="assets\img\icon-sigmoidal.png" width="300" height="auto" alt="icon-sigmoidal" id="isigmoidal">
-                        <label for="isigmoidal">HTML</label>
+                        <img src="assets/img/icon-sigmoidal.svg" alt="Logo Sigmoidal" id="logoSigmoidal">
+                        <label for="logoSigmoidal">Sigmoidal</label>
                     </div>
                     <div>
-                        <img src="assets\img\icon-udemy.png" width="300" height="auto" alt="icon-sigmoidal" id="isigmoidal">
-                        <label for="isigmoidal">HTML</label>
+                        <img src="assets/img/icon-udemy.svg" alt="Logo Udemy" id="logoUdemy">
+                        <label for="logoUdemy">Udemy</label>
                     </div>
-                </div>
+                </article>
+            </section>
+            <!--Formação Acadêmica-->
+            <section id="formacaoAcademica">
+                <h2>Formação Acadêmica</h2>
+                <article>
+                    <h3>Técnico em Mecatrônica</h3>
+                    <p>2020 - 2023</p>
+                    <ul>
+                        <li>Atuação em sistemas de automação industrial, aeroespacial, componentes e equipamentos robotizados.</li>
+                        <li>Aprendizado em áreas de projeto, instalação e operação de equipamentos automatizados e robotizados.</li>
+                        <li>Programação, parametrização, medições e testes de equipamentos automatizados e robotizados.</li>
+                        <li>Integração de equipamentos mecânicos e eletrônicos.</li>
+                        <li>Procedimentos de controle de qualidade e gestão.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Engenheiro de Software</h3>
+                    <p>2024 - Atual (noturno - 4 anos)</p>
+                    <ul>
+                        <li>Atuar na criação, desenvolvimento e implementação de inovações tecnológicas.</li>
+                        <li>Analisar, projetar e construir aplicações software computacionais.</li>
+                        <li>Administrar e padronizar especificações e documentações, no âmbito técnico e gerencial para tomada de decisões.</li>
+                    </ul>
+                </article>
+            </section>
+            <!--Informações de Contato-->
+            <section id="contato">
+                <h2>Informações de Contato:</h2>
+                <address>
+                    <ul>
+                        <li>
+                            <h4>Email</h4>
+                            <p>Envie um email diretamente</p>
+                            <a href="mailto:luizmiguelsantos016@gmail.com">luizmiguelsantos016@gmail.com</a>
+                        </li>
+                        <li>
+                            <h4>LinkedIn</h4>
+                            <p>Conecte-se profissionalmente</p>
+                            <a href="https://www.linkedin.com/in/scientist-luizmiguel/" target="_blank">Meu Perfil Profissional</a>
+                        </li>
+                        <li>
+                            <h4>WhatsApp</h4>
+                            <p>Mande uma mensagem direta</p>
+                            <a href="https://wa.me/5544998760927" target="_blank">+55 (44) 9 9876-0927</a>
+                        </li>
+                        <li>
+                            <h4>Localização</h4>
+                            <p>Disponível para trabalho remoto</p>
+                            <a href="https://www.google.com/maps/place/Paranavaí+-+PR" target="_blank">Paranavaí, PR - Brasil</a>
+                        </li>
+                    </ul>
+                </address>
+            </section>
+            <section id="mensagem">
+                <form action="#" method="POST">
+                    <div>
+                        <input type="text" id="nomeUsuario" name="nomeUsuario"  placeholder="Seu nome" aria-label="Seu Nome" required>
+                    </div>
+                    <div>
+                        <input type="email" id="emailUsuario" name="emailUsuario" placeholder="Seu Email" aria-label="Seu Email" required>
+                    </div>
+                    <div>
+                        <textarea id="mensagemUsuario" name="mensagemUsuario" rows="5" placeholder="Sua Mensagem" aria-label="Sua Mensagem" required></textarea>
+                    </div>
+                    <button type="submit">Enviar Mensagem<i class="fa-regular fa-paper-plane"></i></button>
+                    
+                </form>
             </section>
         </main>
         <footer>
-            <div>
-                <h4>Informações para Contato:</h4>
-                
-            </div>
+            <h5>Desenvolvido por Luiz Miguel &lt;/&gt;</h5>
+            <p>Desenvolvdor Backend Java | Explorando Python e Visão Computacional</p>
+            <p>&copy 2026 Luiz Miguel. Todos os direitos reservados.</p>
         </footer>
     </body>
 </html>
