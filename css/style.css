@@ -69,14 +69,14 @@ header h1 {
     font-size: 2rem;
 }
 
-header nav ul {
+.lista-menu {
     list-style: none;
     display: flex;
     gap: 30px;
     align-items: center;
 }
 
-header nav a {
+.itens-menu {
     color: var(--cor-texto);
     text-decoration: none;
     font-weight: bold;
@@ -208,13 +208,13 @@ section:not(#sobreMim) {
     margin-bottom: 0;
 }
 
-.habilidades-grade {
+.skills-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
 }
 
-.habilidade-item {
+.skill-item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -228,18 +228,18 @@ section:not(#sobreMim) {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-.habilidade-item:hover {
+.skill-item:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 15px rgba(255, 120, 0, 0.2);
 }
 
-.habilidade-item i {
+.skill-item i {
     font-size: 2.2rem;
     color: var(--cor-texto);
     margin-bottom: 5px;
 }
 
-.habilidade-item label {
+.skill-item label {
     font-size: 0.8rem;
     color: #ccc;
     font-weight: bold;
@@ -307,5 +307,3 @@ section:not(#sobreMim) {
         gap: 40px;
     }
 }
-
-/* Realizar uma função que repita as edições e fazer um json das informações */
