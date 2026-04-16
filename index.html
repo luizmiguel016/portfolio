@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
@@ -12,161 +11,105 @@
         <header>
             <h1>Luiz Miguel</h1>
             <nav id="navegacao">
-                <ul id="lista-menu">
+                <ul id="lista-menu" class="lista-menu">
                     
                 </ul>
+                
+                <button id="idioma-toggle" class="btn-icone" style="font-size: 1rem; padding: 8px 12px; cursor: pointer;">EN</button>
+
                 <button id="tema-toggle" aria-multiselectable="Alternar Tema">
                     <i class="fa-solid fa-sun" id="icone-tema"></i>
                 </button>
             </nav>
         </header>
         <main>  
-            <!--Introdução-->
             <section id="sobreMim">
                 <div class="apresentacao">
-                    <h2>Olá, eu sou<br> <span class="destaque nome-alinhado">Luiz Miguel</span><br> Desenvolvedor FullStack</h2>
-                    <p>Sou estudante de Engenharia de Software com foco em desenvolvimento e tecnologia orientada a dados. Atuo com <span class="destaque">Java</span> e <span class="destaque">Python</span>, aplicando boas práticas de programação e fundamentos sólidos de software. Tenho interesse crescente na área de <span class="destaque">Visão Computacional</span> e análise de dados, utilizando <span class="destaque">Python</span> e <span class="destaque">Power BI</span> transformar dados em insights e soluções inteligentes. Estou em constante evolução, buscando aprofundar meus conhecimentos e construir sistemas cada vez mais robustos e eficientes.</p>
+                    <h2><span data-i18n="ola">Olá, eu sou</span><br> <span class="destaque nome-alinhado">Luiz Miguel</span><br> <span data-i18n="profissao">Desenvolvedor FullStack</span></h2>
+                    
+                    <p data-i18n="resumo">Sou estudante de Engenharia de Software com foco em desenvolvimento e tecnologia orientada a dados. Atuo com <span class="destaque">Java</span> e <span class="destaque">Python</span>, aplicando boas práticas de programação e fundamentos sólidos de software. Tenho interesse crescente na área de <span class="destaque">Visão Computacional</span> e análise de dados, utilizando <span class="destaque">Python</span> e <span class="destaque">Power BI</span> transformar dados em insights e soluções inteligentes. Estou em constante evolução, buscando aprofundar meus conhecimentos e construir sistemas cada vez mais robustos e eficientes.</p>
 
                     <div class="botoes-apresentacao">
                         <a href="https://www.linkedin.com/in/scientist-luizmiguel/" class="btn-icone" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
                         <a href="https://github.com/luizmiguel016" class="btn-icone" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        <a href="#" class="btn-destaque" target="_blank"><i class="fa-solid fa-download"></i> Baixar Currículo</a>
+                        <a href="#" class="btn-destaque" target="_blank"><i class="fa-solid fa-download"></i> <span data-i18n="btn-curriculo">Baixar Currículo</span></a>
                     </div>
                 </div>                
                 <img src="assets/img/foto-pessoal.jpg" alt="foto-pessoal" class="foto-perfil">
             </section>
-            <!--Tecnologias-->
+            
             <section id="habilidades">
-                <h2>Minhas <span class="destaque">Habilidades</span></h2> 
+                <h2 class="titulo-secao"><span data-i18n="titulo-hab-1">Minhas</span> <span class="destaque" data-i18n="titulo-hab-2">Habilidades</span></h2>
                 <div class="container-habilidades" id="box-habilidades">
                     
                 </div>
             </section>
-            <!--Experiências-->
+            
             <section id="experiencias">
-                <article>
-                    <h3>Assistente Administrativo</h3>
-                    <p>Faculdade UniFatecie</p>
-                    <p>10/2025 - Atual</p>
-                    <ul>
-                        <li>Atuo como Analista de Suporte TI, utilizando Sistema WAE e Excel.</li>
-                        <li>Correção de BUG de sistemas no âmbito escolar.</li>
-                        <li>Criação de Planos de Pagamentos de cursos EaD.</li>
-                    </ul>
-                </article>
-                <article>
-                    <h3>Jovem Aprendiz em Planejamento e Controle da Manutenção</h3>
+                <h2 class="titulo-secao"><span data-i18n="titulo-exp-1">Minhas</span> <span class="destaque" data-i18n="titulo-exp-2">Experiências</span></h2>
+                <div class="container-experiencias" id="box-experiencias">
 
-                    <p>Louis Dreyfus Company</p>
-                    <p>05/2024 - 09/2025</p>
-                    <ul>
-                        <li>Planejamento e Controle da manutenção atráves do Sistema SAP.</li>
-                        <li>Monitoramento de conclusão de Ordem de Serviço.</li>
-                        <li>Criação de Power BI para Gestão de Motores Elétricos.</li>
-                    </ul>
-                </article>
+                </div>
             </section>
-            <!--Projetos-->
+            
             <section id="projetos">
-                <h2>Meus Projetos</h2>
-                <article>
-                    <h3>Análise de Saúde Pessoal</h3>
-                    <button>Java</button>
-                    <button>MySql</button>
-                </article>
-                <article>
-                    <h3>Análise de Dados Airbnb - Lisboa</h3>
-                    <button>Python</button>
-                    <button>Pandas</button>
-                    <button>Matplotlib</button>
-                    <button>Seaborn</button>
-                </article>
-                    <h3>Mais Projetos em Breve</h3>
-                    <p>Novos projetos estão sendo desenvolvidos e serão adicionados em breve.</p>
-                <article>
-                    <h2>Certificados e Conquistas</h2>
-                    <div>
-                        <img src="assets/img/icon-sigmoidal.svg" alt="Logo Sigmoidal" id="logoSigmoidal">
-                        <label for="logoSigmoidal">Sigmoidal</label>
-                    </div>
-                    <div>
-                        <img src="assets/img/icon-udemy.svg" alt="Logo Udemy" id="logoUdemy">
-                        <label for="logoUdemy">Udemy</label>
-                    </div>
-                </article>
-            </section>
-            <!--Formação Acadêmica-->
+                </section>
+            
             <section id="formacaoAcademica">
-                <h2>Formação Acadêmica</h2>
-                <article>
-                    <h3>Técnico em Mecatrônica</h3>
-                    <p>2020 - 2023</p>
-                    <ul>
-                        <li>Atuação em sistemas de automação industrial, aeroespacial, componentes e equipamentos robotizados.</li>
-                        <li>Aprendizado em áreas de projeto, instalação e operação de equipamentos automatizados e robotizados.</li>
-                        <li>Programação, parametrização, medições e testes de equipamentos automatizados e robotizados.</li>
-                        <li>Integração de equipamentos mecânicos e eletrônicos.</li>
-                        <li>Procedimentos de controle de qualidade e gestão.</li>
-                    </ul>
-                </article>
-                <article>
-                    <h3>Engenheiro de Software</h3>
-                    <p>2024 - Atual (noturno - 4 anos)</p>
-                    <ul>
-                        <li>Atuar na criação, desenvolvimento e implementação de inovações tecnológicas.</li>
-                        <li>Analisar, projetar e construir aplicações software computacionais.</li>
-                        <li>Administrar e padronizar especificações e documentações, no âmbito técnico e gerencial para tomada de decisões.</li>
-                    </ul>
-                </article>
+                <h2 class="titulo-secao"><span data-i18n="titulo-form-1">Formação</span> <span class="destaque" data-i18n="titulo-form-2">Acadêmica</span></h2>
+                
+                <div class="container-formacao" id="box-formacao"></div>
             </section>
-            <!--Informações de Contato-->
+            
             <section id="contato">
-                <h2>Informações de Contato:</h2>
-                <address>
-                    <ul>
-                        <li>
-                            <h4>Email</h4>
-                            <p>Envie um email diretamente</p>
-                            <a href="mailto:luizmiguelsantos016@gmail.com">luizmiguelsantos016@gmail.com</a>
-                        </li>
-                        <li>
-                            <h4>LinkedIn</h4>
-                            <p>Conecte-se profissionalmente</p>
-                            <a href="https://www.linkedin.com/in/scientist-luizmiguel/" target="_blank">Meu Perfil Profissional</a>
-                        </li>
-                        <li>
-                            <h4>WhatsApp</h4>
-                            <p>Mande uma mensagem direta</p>
-                            <a href="https://wa.me/5544998760927" target="_blank">+55 (44) 9 9876-0927</a>
-                        </li>
-                        <li>
-                            <h4>Localização</h4>
-                            <p>Disponível para trabalho remoto</p>
-                            <a href="https://www.google.com/maps/place/Paranavaí+-+PR" target="_blank">Paranavaí, PR - Brasil</a>
-                        </li>
-                    </ul>
-                </address>
-            </section>
-            <section id="mensagem">
-                <form action="#" method="POST">
-                    <div>
-                        <input type="text" id="nomeUsuario" name="nomeUsuario"  placeholder="Seu nome" aria-label="Seu Nome" required>
+                <h2 class="titulo-secao"><span data-i18n="titulo-contato-1">Entre em</span> <span class="destaque" data-i18n="titulo-contato-2">Contato</span></h2>
+
+                <div class="container-contato">
+                    <address class="info-contato">
+                        <ul>
+                            <li>
+                                <h4>Email</h4>
+                                <p data-i18n="contato-email">Envie um email diretamente</p>
+                                <a href="mailto:luizmiguelsantos016@gmail.com">luizmiguelsantos016@gmail.com</a>
+                            </li>
+                            <li>
+                                <h4>LinkedIn</h4>
+                                <p data-i18n="contato-linkedin">Conecte-se profissionalmente</p>
+                                <a href="https://www.linkedin.com/in/scientist-luizmiguel/" target="_blank" data-i18n="contato-linkedin-link">Meu Perfil Profissional</a>
+                            </li>
+                            <li>
+                                <h4>WhatsApp</h4>
+                                <p data-i18n="contato-wpp">Mande uma mensagem direta</p>
+                                <a href="https://wa.me/5544998760927" target="_blank">+55 (44) 9 9876-0927</a>
+                            </li>
+                            <li>
+                                <h4 data-i18n="contato-local-titulo">Localização</h4>
+                                <p data-i18n="contato-local">Disponível para trabalho remoto</p>
+                                <a href="https://maps.google.com/?q=Paranavaí,+PR+-+Brasil" target="_blank">Paranavaí, PR - Brasil</a>
+                            </li>
+                        </ul>
+                    </address>
+
+                    <div class="mensagem-contato">
+                        <form action="https://formspree.io/f/xojyjkyq" method="POST">
+                            <input type="text" id="nomeUsuario" name="nomeUsuario" placeholder="Seu nome" aria-label="Seu Nome" data-i18n-placeholder="form-nome" required>
+                            
+                            <input type="email" id="emailusuario" name="emailUsuario" placeholder="Seu Email" aria-label="Seu Email" data-i18n-placeholder="form-email" required>
+                            
+                            <textarea id="mensagemUsuario" name="mensagemUsuario" rows="5" placeholder="Sua Mensagem" aria-label="Sua Mensagem" data-i18n-placeholder="form-mensagem" required></textarea>
+                            
+                            <button type="submit" class="btn-destaque" style="width: 100%; justify-content: center;">
+                                <span data-i18n="form-btn">Enviar Mensagem</span> <i class="fa-regular fa-paper-plane"></i>
+                            </button>
+                        </form>
                     </div>
-                    <div>
-                        <input type="email" id="emailUsuario" name="emailUsuario" placeholder="Seu Email" aria-label="Seu Email" required>
-                    </div>
-                    <div>
-                        <textarea id="mensagemUsuario" name="mensagemUsuario" rows="5" placeholder="Sua Mensagem" aria-label="Sua Mensagem" required></textarea>
-                    </div>
-                    <button type="submit">Enviar Mensagem<i class="fa-regular fa-paper-plane"></i></button>
-                    
-                </form>
+                </div>
             </section>
         </main>
         <footer>
-            <h5>Desenvolvido por Luiz Miguel &lt;/&gt;</h5>
-            <p>Desenvolvdor Backend Java | Explorando Python e Visão Computacional</p>
-            <p>&copy 2026 Luiz Miguel. Todos os direitos reservados.</p>
+            <h5><span data-i18n="footer-dev">Desenvolvido por</span> Luiz Miguel </></h5>
+            <p data-i18n="footer-desc">Desenvolvdor Backend Java | Explorando Python e Visão Computacional</p>
+            <p>© 2026 Luiz Miguel. <span data-i18n="footer-direitos">Todos os direitos reservados.</span></p>
 
             <script src="js/script.js"></script>
         </footer>
